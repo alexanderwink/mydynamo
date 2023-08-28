@@ -4,7 +4,7 @@ This handy little utility will ready a MySQL database and migrate the data to Dy
 
 ## Good to know
 
-The cli uses SharedConfigEnable from the AWS SDK to read your config values. This includes credentials, region, and support for assume role. It will load its configuration from both the shared config file (~/.aws/config) and shared credentials file (~/.aws/credentials).
+The cli uses SharedConfigEnable from the AWS SDK to read your config values. This includes credentials, region, and support for assume role. It will load its configuration from both the shared config file (\~/.aws/config) and shared credentials file (\~/.aws/credentials).
 
 When putting items in DynanoDB this utility leverages the BatchWriteItem operation. The batch size maybe up to 25 items per batch, or 16MB of data in total. If your items are very large you should consider lowering batch-size to have fewer but larger items in each batch. More info on this https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BatchWriteItem.html
 

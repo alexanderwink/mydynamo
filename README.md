@@ -48,9 +48,6 @@ Usage:
     	Convert tinyint to bool
 ```
 
-## Build and run
+## Install
 
-```
-# go build mydynamo.go
-./mydynamo --help
-```
+Just download and run a pre-built [release](https://github.com/alexanderwink/mydynamo/releases)
